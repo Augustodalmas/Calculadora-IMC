@@ -1,0 +1,36 @@
+<html lang="PT-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora IMC</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <form onsubmit="descobrirIMC(event)">
+      <div id="tela-principal">
+        <label for="IMC" id="IMC">Calculadora - IMC</label>
+        <div class="input">
+          <label for="peso-label">Peso</label>
+          <input type="number" id="peso" />
+          <label for="altura-label">Altura</label>
+          <input type="number" id="altura" step="0.010" />
+        </div>
+        <!--input-->
+        <div id="button">
+          <button type="submit" id="btn-submit">Calcular</button>
+          <button onclick="informacoes(event)" type="button" id="btn-info">
+            ?
+          </button>
+        </div>
+        <ul id="lista">
+          <li></li>
+        </ul>
+      </div>
+    </form>
+    <!--Tela-principal-->
+    <script src="script.js"></script>
+    
+    <a href="https://www.linkedin.com/in/augustordalmas/"
+      >Augusto Rodolpho Dalmás</a>
+  </body>
+</html>
